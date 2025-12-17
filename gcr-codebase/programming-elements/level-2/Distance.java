@@ -19,6 +19,7 @@ public class Distance{
 		// Print Distance in Yards and Miles
 		System.out.println("Distance in Yards is " + yards + " and in miles is " + miles);
 		
+		input.close();
 	}
 }
 		
