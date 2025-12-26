@@ -1,3 +1,7 @@
+# Core Java Practice – BridgeLabz Training
+
+---
+
 ### 📅 Day 1 – Java OOPs (Class & Object) Programs
 **(Date: 26-Dec-2025)**
 
