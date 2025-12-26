@@ -120,3 +120,20 @@ BridgeLabz-Training/
 👉 [Day 6 – Java Methods](https://github.com/Pranshipatel/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/methods)
 
 ---
+
+### 📅 Day 7 – Java Strings  
+**(Date: 22-Dec-2025)**
+
+- Studied Java strings and exception handling:
+  - Creating and manipulating strings  
+  - String arrays and built-in methods  
+  - Exception types and hierarchy  
+
+- Solved practice problems using strings.
+- Committed and pushed solutions to the repository.
+
+🔗 **Code Link:**  
+👉 [Day 7 – Java Strings](https://github.com/Pranshipatel/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/strings)
+
+---
+
