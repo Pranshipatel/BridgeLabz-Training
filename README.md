@@ -1,37 +1,41 @@
-Day 1 - Git & GitHub Setup
-Date: 15 Dec 2025
+# Core Java Practice – BridgeLabz Training
 
-Installed and configured Git.
-Set up GitHub repository.
-  BridgeLabz-Training/
-  │
-  ├── core-java-practice/
-  │   ├── gcr-codebase/
-  │   │   ├── arrays/
-  │   │   ├── builtIn-functions/
-  │   │   ├── control-flow/
-  │   │   ├── java-methods/
-  │   │   ├── programming-elements/
-  │   │   ├── string-handling/
-  │   │   └── strings/
-  │   │
-  │   ├── leet-code-codebase/
-  │   └─scenario-based/─ 
-  │   │
-  │   └─README.md
-  │
-  └── README.md
-Learned basic Git commands (init, clone, add, commit, push, rebase).
-Successfully pushed files to the remote repository.
+## Week 1: Git, GitHub & Java Programming Fundamentals
 
+---
 
+### 📅 Day 1 – Git & GitHub Setup  
+**(Date: 16-Dec-2025)**
 
+- Installed and configured Git.
+- Set up GitHub repository.
+- Understood basic Git workflow.
 
-Day 2 – Git Practice & Basic Java Programs
-Date: 16 December 2025
--Practiced Git workflow to understand version control fundamentals
--Implemented basic Java programs to strengthen understanding of syntax and program structure
--Practiced staging, committing, and pushing Java code to GitHub
+#### 📂 Project Structure:
+``` bash
+BridgeLabz-Training/
+│
+├── core-java-practice/
+│   ├── gcr-codebase/
+│   │   ├── arrays/
+│   │   ├── control-flow/
+│   │   ├── extras/
+│   │   ├── method/
+│   │   ├── programming-elements/
+│   │   ├── programming-prerequisite/
+│   │   └── strings/
+│   │
+│   ├── leet-code-codebase/
+│   ├── scenario-based/
+│   │── README.md
+```
 
-Repository link for practice work:
-🔗 https://github.com/Pranshipatel/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-pre-requisite
+- Learned basic Git commands:
+  - `git init`
+  - `git clone`
+  - `git add`
+  - `git commit`
+  - `git push`
+- Successfully pushed files to remote repository.
+
+  ---
