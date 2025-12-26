@@ -138,6 +138,18 @@ BridgeLabz-Training/
   ---
 
 
+## Week 2: Object Oriented Programming
+
+---
 
 
+### 📅 Day 1 - Extra Concepts
+**(Date: 23-Dec-2025)**
 
+- Studied concepts of String, Built-in function, Date and time
+   - Worked on String handling problems
+   - Worked on Built-in funtions problems
+   - Done date and time concepts and problems
+
+🔗 **Code Link:**  
+👉 [Day 8– Extras](https://github.com/Pranshipatel/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/extras)
