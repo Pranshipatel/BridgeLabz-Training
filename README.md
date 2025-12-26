@@ -1,7 +1,5 @@
 # Core Java Practice – BridgeLabz Training
 
-## Week 1: Git, GitHub & Java Programming Fundamentals
-
 ---
 
 ### 📅 Day 1 – Git & GitHub Setup  
@@ -137,3 +135,13 @@ BridgeLabz-Training/
 
 ---
 
+### 📅 Day 8 - Extra Concepts
+**(Date: 23-Dec-2025)**
+
+- Studied concepts of String, Built-in function, Date and time
+   - Worked on String handling problems
+   - Worked on Built-in funtions problems
+   - Done date and time concepts and problems
+
+🔗 **Code Link:**  
+👉 [Day 8– Extras](https://github.com/Pranshipatel/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/extras)
