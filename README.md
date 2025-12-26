@@ -1,4 +1,4 @@
-# Core Java Practice – BridgeLabz Training
+# Java Oops Practice – BridgeLabz Training
 
 ---
 
