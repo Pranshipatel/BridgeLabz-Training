@@ -86,3 +86,20 @@ BridgeLabz-Training/
 👉 [Day 4 – Java Control Flows](https://github.com/Pranshipatel/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/control-flows)
 
 ---
+
+### 📅 Day 5 – Java Arrays  
+**(Date: 19-Dec-2025)**
+
+- Studied Java arrays and their usage:
+  - Creating, accessing, and modifying arrays  
+  - Using `for` loop and array `length`  
+  - Multi-dimensional and 2D arrays  
+
+- Solved practice problems using arrays.
+- Followed best programming practices.
+- Committed and pushed solutions to the repository.
+
+🔗 **Code Link:**  
+👉 [Day 5 – Java Arrays](https://github.com/Pranshipatel/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/arrays)
+
+---
