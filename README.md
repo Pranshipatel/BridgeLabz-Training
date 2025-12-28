@@ -143,7 +143,7 @@ BridgeLabz-Training/
 ---
 
 
-### 📅 Day 1 - Extra Concepts
+### 📅 Day 8 - Extra Concepts
 **(Date: 23-Dec-2025)**
 
 - Studied concepts of String, Built-in function, Date and time
@@ -168,15 +168,18 @@ BridgeLabz-Training/
 
 ---
 
-### 📅 Day 10 – Java OOPs (Constructors & Access Modifiers) Programs and Scenario Based Program
+### 📅 Day 10 – Java OOPs (Constructors & Access Modifiers) Programs, Scenario Based Program and LeetCode Problems
 **(Date: 27-Dec-2025)**
 
 - Studied Constructors in Java (default, parameterized, and copy constructors).
 - Learned the difference between instance variables and class variables.
 - Practiced access modifiers (public, protected, private) and understood their scope.
 - Practiced Scenario Based Problems
-🔗 **Code Link:**  
+- Practiced LeetCode Problem
+🔗 **Code Link:**
 👉 [Day 10 – Java-Oops(Constructors & Access Modifiers)](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcept/src/com/constructor/level1)
 👉 [Day 10 – Java-Scenario-Based-Programs](https://github.com/Pranshipatel/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)
+👉 [Day 10 – Java-LeetCode Problems](https://github.com/Pranshipatel/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase)
+
 
 
