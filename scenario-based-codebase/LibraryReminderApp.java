@@ -21,7 +21,7 @@ public class LibraryReminderApp {
             System.out.println("\nBook " + book + " Details");
 
             System.out.print("Enter Due Date: ");
-            LocalDate dueDate = LocalDate.parse(input.next());
+              LocalDate dueDate = LocalDate.parse(input.next());
 
             System.out.print("Enter Return Date: ");
             LocalDate returnDate = LocalDate.parse(input.next());
