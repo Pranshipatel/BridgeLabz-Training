@@ -29,11 +29,11 @@ public class LibraryReminderApp {
             if (returnDate.isAfter(dueDate)) {
 
                 long lateDays = ChronoUnit.DAYS.between(dueDate, returnDate);
-                int fine = (int) lateDays * fine;
-                totalFine += fine;
+                int fineAns = (int) lateDays * fine;
+                totalFine += fineAns;
 
                 System.out.println("Book returned late by " + lateDays + " days");
-                S2024ystem.out.println("Fine for this book: Rs. " + fine);
+                System.out.println("Fine for this book: Rs. " + fineAns);
 
             } else {
                 System.out.println("Book returned on time. No fine.");
