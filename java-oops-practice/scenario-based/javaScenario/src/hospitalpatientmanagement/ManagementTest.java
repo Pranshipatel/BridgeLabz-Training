@@ -11,13 +11,13 @@ public class ManagementTest {
         Bill bill = new Bill(5000, 0.18, 500);
 
         p1.displayInfo();
-        System.out.println();
+        System.out.println("--------------------------------------");
 
         p2.displayInfo();
-        System.out.println();
+        System.out.println("--------------------------------------");
 
         d1.displayInfo();
-        System.out.println();
+        System.out.println("---------------------------------------");
 
         System.out.println("Total Bill Amount: " + bill.calculatePayment());
     }
