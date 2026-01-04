@@ -22,7 +22,7 @@ public abstract class Vehicle implements IRideService {
         double baseFare = 50;
         fare = baseFare + distance * getRate();
         System.out.println("Vehicle Number : " + vehicleNumber + "\nVehicle Capacity : " + capacity);
-        System.out.println(type + " booked \nFare: Rs" + fare);
+        System.out.println(type + " booked \nFare: Rs " + fare);
     }
 
     @Override
@@ -30,7 +30,7 @@ public abstract class Vehicle implements IRideService {
         System.out.println(type + " ride ended.");
     }
 
-    // Read-only access
+    
     public double getFare() {
         return fare;
     }
