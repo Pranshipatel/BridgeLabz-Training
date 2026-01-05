@@ -364,7 +364,7 @@ BridgeLabz-Training/
     - Linked List (dynamic node-based structure).
     - Circular Linked list.
     - Linear Linked List.
-    - Doubly Linked List.
+    - Doubly Linked List. 
  
 
 🔗 **Code Link:**  
