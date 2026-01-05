@@ -217,3 +217,35 @@ BridgeLabz-Training/
 👉 [Day 11 – Java KeyWords](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcept/src/com/javakeywords/level1)
 
 ---
+
+
+### Day 12 – Scenario-Based Design & Object Modeling
+
+**(Date: 30-Dec-2025)**
+
+### 📘 Topics Covered
+ - Practiced real-world scenario-based problem solving using Object-Oriented Programming concepts.
+ - Learned how to identify entities, attributes, and relationships from problem statements.
+ - Designed and implemented object models before writing code.
+ - Understood and applied different types of relationships:
+   - Association – objects related but independent
+   - Aggregation – “has-a” relationship with independent lifecycles
+   - Composition – strong ownership and dependency
+
+ - Key Concepts Applied
+    - Breaking real-world problems into:
+    - Classes
+    - Objects
+    - Responsibilities
+
+ - Mapping real-life scenarios into:
+    - Class diagrams (conceptual understanding)
+    - Logical method responsibilities
+
+🔗 **Code Link:**
+👉 [Day 12 - Scenario-Based Question](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based/javaScenario/src)
+
+👉 [Day 12 - Object Modelling](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcept/src/com/objectmodelling/level1)
+
+---
+
