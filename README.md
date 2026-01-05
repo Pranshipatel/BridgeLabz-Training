@@ -182,4 +182,38 @@ BridgeLabz-Training/
 👉 [Day 10 – Java-LeetCode Problems](https://github.com/Pranshipatel/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase)
 
 
+### 📅 Day 11 – Keywords & Scenario-Based Programming
 
+**(Date: 29-Dec-2025)**
+
+### 📘 Topics Covered
+
+- Learned and implemented important Java keywords:
+  - `this` – to refer to current class instance variables and methods.
+  - `static` – to define class-level variables and methods.
+  - `final` – to restrict modification of variables, methods, and classes.
+
+- Understood differences between:
+  - this vs static
+  - Instance members vs static members
+  - Final variables vs non-final variables
+
+- Solved scenario-based problems to strengthen real-world understanding:
+  - Parking Lot Management System
+  - Phone Recharge Simulation
+  - Number Guessing Game
+  - Discount Calculation System
+
+- Focused on:
+  - Logical flow building
+  - Conditional statements (`if-else`, `switch`)
+  - Looping constructs
+  - Clean and readable code structure
+
+- Improved debugging skills and code readability.
+
+🔗 Code Link:
+👉 [Day 11 – Scenario-Based Programs](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based/javaScenario/src)
+👉 [Day 11 – Java KeyWords](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcept/src/com/javakeywords/level1)
+
+---
