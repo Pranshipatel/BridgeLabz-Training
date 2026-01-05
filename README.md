@@ -214,7 +214,7 @@ BridgeLabz-Training/
 - Improved debugging skills and code readability.
 
 🔗 Code Link:
-👉 [Day 11 – Scenario-Based Programs](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based/javaScenario/src)
+👉 [Day 11 – Scenario-Based Programs](https://github.com/Pranshipatel/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)
 👉 [Day 11 – Java KeyWords](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcept/src/com/javakeywords/level1)
 
 ---
@@ -244,7 +244,7 @@ BridgeLabz-Training/
     - Logical method responsibilities
 
 🔗 **Code Link:**
-👉 [Day 12 - Scenario-Based Question](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based/javaScenario/src)
+👉 [Day 12 - Scenario-Based Question](https://github.com/Pranshipatel/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)
 
 👉 [Day 12 - Object Modelling](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcept/src/com/objectmodelling/level1)
 
@@ -315,3 +315,30 @@ BridgeLabz-Training/
 👉 [*Day 14 – Encapsulation, Interfaces, Abstract Classes & Polymorphism*](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcept/src/com/encapsulationandpolymorphism)
 
 ---
+
+
+### 📅 Day 15 – Scenario-Based Programming using OOP Concepts  
+**(Date: 02-Jan-2026)**
+
+### 📘 Topics Covered
+
+- Implemented **Encapsulation** through real-world scenarios:
+  - Used `private` data members to protect sensitive information.
+  - Applied getters and setters to validate and control data access.
+  - Ensured data integrity by restricting direct object manipulation.
+
+- Applied **Polymorphism** in scenario-based problems:
+  - Used method overriding to achieve runtime polymorphism.
+  - Demonstrated dynamic method dispatch using parent class references.
+  - Improved flexibility and scalability of code design.
+
+- Solved real-world OOP scenarios:
+  - **Bank Account System**
+  - **Employee Payroll System**
+  - **Vehicle Rental System**
+  - **Online Shopping Cart**
+
+🔗 **Code Link:**  
+👉 [*Day 15 – Scenario-Based OOP Programs (Encapsulation & Polymorphism)*](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based/javaScenario/src)
+
+--- 
