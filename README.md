@@ -1,4 +1,3 @@
-<img width="664" height="377" alt="image" src="https://github.com/user-attachments/assets/ab669f22-c07c-4f44-8317-dee71e21dd0a" /># BridgeLabz-Training
 
 ## Week 1: Git, GitHub & Java Programming Fundamentals
 
