@@ -1,4 +1,4 @@
-# BridgeLabz-Training
+<img width="664" height="377" alt="image" src="https://github.com/user-attachments/assets/ab669f22-c07c-4f44-8317-dee71e21dd0a" /># BridgeLabz-Training
 
 ## Week 1: Git, GitHub & Java Programming Fundamentals
 
@@ -409,5 +409,30 @@ BridgeLabz-Training/
 🔗 **Code Link:**  
 👉 [*Day 17 – Stack, Queue & HashMap Implementations*](https://github.com/Pranshipatel/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaProgramming/src/com)
 
+
+
+
+---
+
+### 📅 Day 18 – Sorting Algorithms (Core & Advanced)  
+**(Date: 05-Jan-2026)**
+
+### 📘 Topics Covered
+
+- Studied the importance of **Sorting Algorithms**:
+  - Organizing data efficiently for faster searching, processing, and analysis.
+  - Compared algorithms based on time complexity, space usage, and stability.
+
+### 🔹 Core Sorting Algorithms
+
+- **Bubble Sort**
+- **Insertion Sort**
+- **Merge Sort (Divide & Conquer)**
+- **Quick Sort (Divide & Conquer)**
+- **Heap Sort**
+- **Selection Sort**
+
+🔗 **Code Link:**  
+👉 [*Day 18 – Sorting Algorithms Implementations*](https://github.com/Pranshipatel/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaProgramming/src/com)
 
 
