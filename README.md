@@ -280,7 +280,9 @@ BridgeLabz-Training/
 
 ---
 
+## Week 3: Object Oriented Programming & Data Structures
 
+---
 ### 📅 Day 14 – Encapsulation, Interfaces, Abstract Classes & Polymorphism  
 **(Date: 01-Jan-2026)**
 
