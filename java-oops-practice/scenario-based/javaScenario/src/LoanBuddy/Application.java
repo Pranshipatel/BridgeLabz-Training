@@ -8,7 +8,6 @@ public class Application {
 	
 	
 	public Application(String name, int creditScore, int income, int loadAmount) {
-
 		this.name = name;
 		this.creditScore = creditScore;
 		this.income = income;
@@ -31,8 +30,5 @@ public class Application {
 	protected int getLoadAmount() {
 		return loadAmount;
 	}
-
-	
-	
 
 }
