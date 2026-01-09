@@ -436,4 +436,35 @@ BridgeLabz-Training/
 🔗 **Code Link:**  
 👉 [*Day 18 – Sorting Algorithms Implementations*](https://github.com/Pranshipatel/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaProgramming/src/com)
 
+--- 
+
+### 📅 Day 19 – Searching Algorithms – Complete Overview  
+**(Date: 06-Jan-2026)**
+
+## 📘 Topics Covered
+
+Focused on **Java best practices** for string handling and file I/O, along with **Linear Search and Binary Search**, reinforced through practical and challenge-based problems.
+
+### 1. StringBuilder
+- **Use When:** Frequent string modifications in loops or performance-critical code.
+
+### 2. StringBuffer
+- **Use When:** Thread-safe string manipulation is required.
+
+### 3. FileReader
+- **Use When:** Reading character-based text files.
+
+### 4. InputStreamReader
+- **Use When:** Converting byte streams to character streams.
+
+### 5. Linear Search
+- **Use When:** Data is unsorted or small.
+
+### 6. Binary Search
+- **Use When:** Data is sorted and fast lookup is required.
+
+🔗 **Code Link:**  
+👉 [*Day 19 – Searching Algorithms Implementation*](https://github.com/Pranshipatel/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaProgramming/src/com/searching)
+
+---
 
