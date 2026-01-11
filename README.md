@@ -119,3 +119,46 @@ Focused on **Java best practices** for string handling and file I/O, along with 
 ---
 
 
+## 📅 Day 20 – Runtime Analysis & Big O Notation  
+**(Date: 07-Jan-2026)**
+
+
+### 📝 Topics Covered
+
+Studied **Big O Notation** to analyze **time and space complexity** and evaluate algorithm performance as input size grows.
+### Algorithm Analysis & Big O – Scenario-Based Insights
+
+- Studied **Big O Notation** to evaluate time & space complexity for growing inputs.
+
+**Scenario-Based Learnings**
+
+1. **Searching Large Datasets**
+   - Linear Search → O(N)
+   - Binary Search → O(log N)  Efficient for large, sorted data
+
+2. **Sorting Algorithms**
+   - Bubble Sort → O(N²)
+   - Merge Sort → O(N log N)
+   - Quick Sort → O(N log N) Avoid Bubble Sort for large inputs
+
+3. **String Concatenation**
+   - `String` → O(N²)
+   - `StringBuilder` / `StringBuffer` → O(N) Mutable strings are faster
+
+4. **Large File Reading**
+   - `FileReader` → Slower (character-based)
+   - `InputStreamReader` → Faster (byte-based) Efficient stream selection matters
+
+5. **Fibonacci Computation**
+   - Recursive → O(2ⁿ)
+   - Iterative → O(N) Iterative is faster & memory-efficient
+
+6. **Data Structure Lookups**
+   - Array → O(N)
+   - HashSet → O(1)
+   - TreeSet → O(log N) HashSet offers fastest lookup; TreeSet maintains order
+
+🔗 **Code Link:**  
+👉 [*Day 20 – Runtime Analysis Implementation*](https://github.com/Pranshipatel/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaProgramming/src/algorithmanalysis)
+
+---
