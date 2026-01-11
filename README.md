@@ -511,3 +511,21 @@ Studied **Big O Notation** to analyze **time and space complexity** and evaluate
 
 ---
 
+## 📅 Day 21 – Real-World Scenario-Based OOP Problems  
+**(Date: 08-Jan-2026)**
+
+### 📝 Topics Covered
+
+Worked on **multiple real-world problem statements** to strengthen understanding of Object-Oriented Programming by designing scalable and modular systems.
+
+### Scenario-Based OOP Practice
+- Implemented real-world **OOP scenarios** to apply concepts practically.  
+- Used **Encapsulation** to protect data and control access.  
+- Applied **Inheritance** for logical hierarchies and code reuse.  
+- Leveraged **Polymorphism** for flexible behavior across object types.  
+- Enhanced **system design skills** and interview readiness through scenario-driven problems.
+
+🔗 **Code Link:**  
+👉 [*Day 21 – Scenario Based Question Implementation*](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based/javaScenario/src)
+
+---
