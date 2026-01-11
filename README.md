@@ -162,3 +162,28 @@ Studied **Big O Notation** to analyze **time and space complexity** and evaluate
 👉 [*Day 20 – Runtime Analysis Implementation*](https://github.com/Pranshipatel/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaProgramming/src/algorithmanalysis)
 
 ---
+## 📅 Day 22 – Real-World Scenario-Based DSA Problems  
+**(Date: 10-Jan-2026)**
+
+### 📝 Topics Covered
+
+- Applied **core Data Structures** to practical problems.
+- Focused on **efficient structure selection** and logical implementation.
+
+#### Scenario-Based DSA Implemented
+1. **BookShelf – Library Organizer**
+   - `HashMap + LinkedList` for genre-wise book management.
+   - Efficient insert/delete operations.
+
+2. **BrowserBuddy – Tab History Manager**
+   - `Doubly Linked List` for back/forward navigation.
+   - `Stack` for recently closed tabs restoration.
+
+3. **AmbulanceRoute – Emergency Navigation**
+   - `Circular Linked List` for rotating through hospital units.
+   - Dynamically remove unavailable units.
+
+🔗 **Code:**  
+👉 [Day 22 - Scenario-Based Data Structures](https://github.com/Pranshipatel/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/DsaScenarioBased/src)
+
+---
