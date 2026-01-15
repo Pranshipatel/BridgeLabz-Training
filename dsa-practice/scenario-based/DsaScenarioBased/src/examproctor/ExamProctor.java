@@ -51,9 +51,10 @@ public class ExamProctor {
             System.out.println("This is the last question.");
             displayQuestion();
             return;
+        } else {
+            visitedStack.push(queStack.pop());
+           displayQuestion();
         }
-        visitedStack.push(queStack.pop());
-        displayQuestion();
     }
 
     // Move backward
@@ -62,9 +63,10 @@ public class ExamProctor {
             System.out.println("No previous question.");
             displayQuestion();
             return;
+        } else {
+            queStack.push(visitedStack.pop());
+            displayQuestion();
         }
-        queStack.push(visitedStack.pop());
-        displayQuestion();
     }
 
     // Score calculation
