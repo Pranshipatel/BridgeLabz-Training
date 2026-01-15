@@ -11,7 +11,7 @@ public class SkillForgeApp {
       Instructor instructor = new Instructor("Dr. Sharma", "sharma@skillforge.com");
 
      
-      Student student = new Student("Arif", "arif@student.com");
+      Student student = new Student("Pranshi", "pranshi@student.com");
 
       // Create Course with custom modules
       Course javaCourse = new Course(
