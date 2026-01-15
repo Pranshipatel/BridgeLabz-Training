@@ -569,21 +569,67 @@ Worked on **multiple real-world problem statements** to strengthen understanding
    - `Queue` for managing incoming customer calls.
    - `PriorityQueue` for handling VIP customers.
    - `HashMap` to track call frequency per customer.
-   - Ensured fair processing with priority handling.
-
+  
 5. **TrainCompanion – Compartment Navigation System**
    - `Doubly Linked List` to model train compartments.
    - Enabled forward and backward traversal.
-   - Supported dynamic insertion and removal of compartments.
-   - Displayed adjacent compartments for quick navigation decisions.
 
 6. **TextEditor – Undo/Redo Functionality**
    - `Stack` to track user actions (insert, delete, format).
-   - Implemented **Undo** using the primary stack.
-   - Maintained a separate stack for **Redo** operations.
-   - Simulated real-world editor behavior with action history.
+   - Implemented **Undo** and **Redo** operations using the primary stack.
 
 🔗 **Code:**  
 👉 [Day 23 - Advanced Scenario-Based DSA](https://github.com/Pranshipatel/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/DsaScenarioBased/src)
 
+#### Scenario-Based OOP Implemented
+
+1. **HomeNest – Smart Home Device Manager**
+   - Base `Device` class with common attributes and behavior.
+   - Subclasses: `Light`, `Camera`, `Thermostat`, `Lock`.
+   - `IControllable` interface for device operations.
+
+2. **BudgetWise – Personal Finance Tracker**
+   - `Transaction` and `Budget` classes for financial modeling.
+   - `IAnalyzable` interface for reports and overspend detection.
+   - Implemented inheritance: `MonthlyBudget`, `AnnualBudget`.
+
+3. **GameBox – Mobile Game Distribution Platform**
+   - `Game` and `User` classes for game management.
+   - `IDownloadable` interface for download and demo features.
+   - Implemented inheritance: `ArcadeGame`, `StrategyGame`.
+
+🔗 **Code:**  
+👉 [Day 23 - Real-World OOP Java Scenarios](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based/javaScenario/src)
+
 ---
+
+## 📅 Day 24 – Advanced Scenario-Based OOP & Java Concepts
+**(Date: 13-Jan-2026)**
+
+### 📝 Topics Covered
+
+- Applied **OOP principles** through real-world, story-driven scenarios.
+- Strengthened understanding of **Encapsulation, Inheritance, Interfaces, and Polymorphism**.
+- Introduced **advanced Java concepts** like Annotations and Reflection.
+
+###  Scenarios Implemented
+
+1. **PayXpress – Utility Bill Payment System**
+   - Modeled bills using inheritance (`ElectricityBill`, `WaterBill`, `InternetBill`).
+   - Used `IPayable` interface for payments and reminders.
+   - Applied encapsulation and polymorphism for utility-specific reminders.
+
+2. **EcoWing – Bird Sanctuary Management System**
+   - Base `Bird` class with interfaces `Flyable` and `Swimmable`.
+   - Demonstrated polymorphism by invoking behaviors dynamically.
+     
+3. **Annotations & Reflection (Conceptual Scenario)**
+   - Used **custom annotations** (e.g., `@DeveloperInfo`).
+   - Applied **Reflection API** for metadata access and dynamic method invocation.
+  
+🔗 **Code:**  
+👉 [Day 24 - Real-World OOP Java Scenarios](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based/javaScenario/src)
+
+---
+
+
