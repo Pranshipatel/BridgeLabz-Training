@@ -632,20 +632,21 @@ Worked on **multiple real-world problem statements** to strengthen understanding
 
 ---
 
-📅 Day 26 – Trees & Graphs Fundamentals
-(Date: 15-Jan-2026)
+
+##📅 Day 26 – Trees & Graphs Fundamentals
+**(Date: 15-Jan-2026)**
 
 Focused on understanding Trees and Graphs as core non-linear data structures used in complex problem solving and system design.
 
-📝 Topics Covered
-Trees
+###📝 Topics Covered
+**Trees**
 
 Concept of hierarchical data representation.
 Key terminology: root, parent, child, leaf, depth, height.
 Types of trees: Binary Tree, Binary Search Tree (BST).
 Tree traversals: Inorder, Preorder, Postorder (conceptual understanding).
 Use cases: file systems, organizational structures, search optimization.
-Graphs
+**Graphs**
 
 Representation of relationships using vertices and edges.
 Types: Directed vs Undirected, Weighted vs Unweighted.
@@ -693,5 +694,20 @@ Generates accurate, state-level rank lists.
    - 
 🔗 **Code:**  
 👉 [Day 26 - Java Generics](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcept/src/com/generics)
+
+---
+## 📅 Day 27 – Java Collections Framework
+**(Date: 17-Jan-2026)**
+
+### 📝 Topics Covered
+
+- Learned the structure and purpose of the **Java Collections Framework** for efficient data handling.
+- Studied core collection interfaces: **List, Set, Queue, and Map**.
+- Explored common implementations: `ArrayList`, `LinkedList`, `HashSet`, `TreeSet`, `HashMap`.
+- Understood differences in **ordering, duplication, performance, and use cases**.
+- Practiced choosing the right collection based on **time complexity and problem requirements**.
+
+🔗 **Code:**  
+👉 [Day 27 - Java Collections](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcept/src/com/collections)
 
 ---
