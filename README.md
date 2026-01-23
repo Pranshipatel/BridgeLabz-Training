@@ -633,33 +633,40 @@ Worked on **multiple real-world problem statements** to strengthen understanding
 ---
 
 
-##📅 Day 26 – Trees & Graphs Fundamentals
+## 📅 Day 25 – Trees & Graphs Fundamentals
 **(Date: 15-Jan-2026)**
 
-Focused on understanding Trees and Graphs as core non-linear data structures used in complex problem solving and system design.
+Focused on understanding **Trees and Graphs** as core non-linear data structures used in complex problem solving and system design.
 
-###📝 Topics Covered
-**Trees**
+### 📝 Topics Covered
+- **Trees**
+  - Concept of hierarchical data representation.
+  - Key terminology: root, parent, child, leaf, depth, height.
+  - Types of trees: Binary Tree, Binary Search Tree (BST).
+  - Tree traversals: Inorder, Preorder, Postorder (conceptual understanding).
+  - Use cases: file systems, organizational structures, search optimization.
 
-Concept of hierarchical data representation.
-Key terminology: root, parent, child, leaf, depth, height.
-Types of trees: Binary Tree, Binary Search Tree (BST).
-Tree traversals: Inorder, Preorder, Postorder (conceptual understanding).
-Use cases: file systems, organizational structures, search optimization.
-**Graphs**
+- **Graphs**
+  - Representation of relationships using vertices and edges.
+  - Types: Directed vs Undirected, Weighted vs Unweighted.
+  - Graph representations: Adjacency List and Adjacency Matrix.
+  - Conceptual understanding of graph traversal (BFS, DFS).
 
-Representation of relationships using vertices and edges.
-Types: Directed vs Undirected, Weighted vs Unweighted.
-Graph representations: Adjacency List and Adjacency Matrix.
-Conceptual understanding of graph traversal (BFS, DFS).
-Real-World Sorting Scenarios
-1. EventManager – Ticket Price Optimizer (Quick Sort)
-Sorts millions of unsorted ticket prices.
-Displays top 50 cheapest or costliest tickets.
-2. ExamCell – Student Rank Generator (Merge Sort)
-Merges scores from multiple exam centers.
-Generates accurate, state-level rank lists.
+### Real-World Sorting Scenarios
 
+#### 1. **EventManager – Ticket Price Optimizer (Quick Sort)**
+- Sorts millions of unsorted ticket prices.
+- Displays top 50 cheapest or costliest tickets.
+
+#### 2. **ExamCell – Student Rank Generator (Merge Sort)**
+- Merges scores from multiple exam centers.
+- Generates accurate, state-level rank lists.
+
+  
+🔗 **Code:**  
+👉 [Day 27 - Sorting Scenario](https://github.com/Pranshipatel/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/DsaScenarioBased/src)
+
+---
 
 ## 📅 Day 26 – Java Generics: Best Practices & Real-World Scenarios
 **(Date: 16-Jan-2026)**
