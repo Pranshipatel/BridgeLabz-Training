@@ -718,3 +718,50 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 👉 [Day 27 - Java Collections](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcept/src/com/collections)
 
 ---
+## 📅 Day 28 – Java File Handling & Streams
+**(Date: 19-Jan-2026)**
+
+### 📝 Topics Covered
+
+- Learned **core Java I/O concepts** including file reading/writing, buffering, and stream hierarchies.
+- Implemented **efficient file operations** using buffered streams, chunk-based reading, and performance comparison with unbuffered streams.
+- Practiced **data persistence techniques** such as serialization/deserialization and storing primitive data using data streams.
+- Explored **advanced stream usage** including byte array streams for binary files and piped streams for inter-thread communication.
+- Solved real-world problems like **large file processing**, word frequency analysis, error log scanning, and user input handling with proper exception management.
+
+🔗 **Code:**  
+👉 [Day 28 - Java File Handling & Streams](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcept/src/com/streams)
+
+---
+
+## 📅 Day 29 – Exception Handling in Java
+**(Date: 20-Jan-2026)**
+
+### 📝 Topics Covered
+
+- Understood **Java exception handling fundamentals** using `try`, `catch`, `finally`, `throw`, and `throws`, along with the complete exception hierarchy.
+- Differentiated between **checked and unchecked exceptions**, their use cases, and how compile-time vs runtime errors are handled.
+- Practiced handling **common runtime exceptions** (NullPointer, Arithmetic, ArrayIndexOutOfBounds, etc.) with single, multiple, and nested try-catch blocks.
+- Designed and implemented **custom exceptions** for real-world scenarios like banking transactions and user authentication.
+- Learned **best practices** including try-with-resources, specific exception handling, meaningful messages, and clean resource management.
+
+🔗 **Code:**  
+👉 [Day 29 - Exception Handling in Java](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcept/src/com/exceptions)
+
+---
+
+## 📅 Day 30 – JUnit Testing & Java Regular Expressions (Regex)
+**(Date: 22-Jan-2026)**
+
+### 📝 Topics Covered
+
+- Practiced **JUnit testing fundamentals** including unit tests for calculators, string utilities, list operations, exception handling, parameterized tests, lifecycle annotations (`@BeforeEach`, `@AfterEach`), timeouts, and file handling.
+- Implemented **advanced JUnit scenarios** such as banking transactions, password validation, temperature conversion, date formatting, and user registration with proper exception assertions.
+- Learned **Java Regex basics** using `Pattern` and `Matcher` classes for matching, searching, and replacing text.
+- Explored **regex metacharacters and quantifiers** to build flexible patterns for digits, words, boundaries, repetitions, and validations.
+- Built **real-world regex validations and extractors** including email, password, phone number checks, hashtag extraction, date parsing, domain extraction, and text cleanup using `find()`, `matches()`, and `replaceAll()`.
+
+🔗 **Code:**  
+👉 [Day 32 - Java Regular Expressions (Regex)](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcept/src/com/regexandjunit)
+
+---
