@@ -27,7 +27,7 @@ public class WriteEmployeeCSV {
 			writer.newLine();
 
 			// Write employee records
-			writer.write("101,Arif,Engineering,60000");
+			writer.write("101,Pranshi,Engineering,60000");
 			writer.newLine();
 
 			writer.write("102,Rahul,HR,52000");
