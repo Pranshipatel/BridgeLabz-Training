@@ -762,6 +762,40 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 - Built **real-world regex validations and extractors** including email, password, phone number checks, hashtag extraction, date parsing, domain extraction, and text cleanup using `find()`, `matches()`, and `replaceAll()`.
 
 🔗 **Code:**  
-👉 [Day 32 - Java Regular Expressions (Regex)](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcept/src/com/regexandjunit)
+👉 [Day 30 - Java Regular Expressions (Regex)](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcept/src/com/regexandjunit)
+
+---
+
+## 📅 Day 31 – Java Annotations & Reflection
+**(Date: 23-Jan-2026)**
+
+### 📝 Topic Covered
+
+- Explored **Java Reflection API** to inspect classes at runtime, including methods, fields, constructors, and metadata without knowing class details at compile time.
+- Practiced **dynamic object creation, method invocation, and private member access**, enabling flexible and framework-like behavior.
+- Implemented **custom annotations** and learned how to retrieve annotation data at runtime using reflection.
+- Applied reflection to **modify static and private fields**, demonstrating advanced runtime configuration handling.
+- Built **real-world advanced use cases** such as object mappers, JSON generation, dynamic proxies for logging, dependency injection using annotations, and execution-time measurement of methods.
+
+
+📌 [**Annotations**](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcept/src/com/reflectionandannotation/annotation)  
+📌 [**Reflections**](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcept/src/com/reflectionandannotation/reflection)  
+
+
+---
+## 📅 Day 32 – Collections Scenarios & Real-World Use Cases
+**(Date: 24-Jan-2026)**
+
+### 📝 Topics Covered
+
+- Explored **real-world scenarios** for Java Collections in diverse domains like healthcare, messaging, music libraries, education, and e-commerce.  
+- Implemented **Map, List, Set, and PriorityQueue** to handle practical requirements such as categorization, deduplication, sorting, and filtering.  
+- Practiced **file reading using I/O streams** (`BufferedReader`, `FileReader`, `FileInputStream`) to ingest CSV and plain text data.  
+- Applied **Regex** for data validation, parsing timestamps, expiry dates, and structured fields from text files.  
+- Used **Generics** to build flexible, type-safe solutions across various data types (medicines, songs, exams, deals).  
+- Raised **custom exceptions** to handle edge cases like critically low inventory, invalid marks, or malformed deal entries.  
+- Leveraged **Java Streams and Comparators** for filtering, sorting, and processing large datasets efficiently.
+
+📌 [**Scenario Based Questions**](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/scenario-based/JavaCollectionsConcept/src/resumeanalyzer)  
 
 ---
