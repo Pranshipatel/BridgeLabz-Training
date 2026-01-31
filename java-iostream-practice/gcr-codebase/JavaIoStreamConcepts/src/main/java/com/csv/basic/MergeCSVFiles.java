@@ -13,13 +13,11 @@ public class MergeCSVFiles {
 
     public static void main(String[] args) {
 
-        // Map to store: ID → Name,Age
         Map<String, String> studentDetails = new HashMap<>();
 
         String outputDir = "output";
         String outputFile = outputDir + "/merged_students.csv";
 
-        // Create output directory if not exists
         File dir = new File(outputDir);
         if (!dir.exists()) {
             dir.mkdir();
@@ -35,20 +33,13 @@ public class MergeCSVFiles {
             boolean isHeader = true;
 
             while ((line = br1.readLine()) != null) {
-
-                // Skip header
                 if (isHeader) {
                     isHeader = false;
                     continue;
                 }
 
-                // TAB separated values
                 String[] data = line.split("\\t");
-
-                // Safety check
-                if (data.length < 3) {
-                    continue;
-                }
+                if (data.length < 3) continue;
 
                 String id = data[0].trim();
                 String name = data[1].trim();
@@ -68,41 +59,51 @@ public class MergeCSVFiles {
                                 .getResourceAsStream("docs/csv/students2.csv")));
              BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile))) {
 
-            // Write header
-            bw.write("ID,Name,Age,Marks,Grade");
+            // Fancy header inside CSV
+            bw.write("=====================================");
+            bw.newLine();
+            bw.write(" MERGED STUDENT DETAILS ");
+            bw.newLine();
+            bw.write("=====================================");
+            bw.newLine();
+            bw.write("ID | NAME | AGE | MARKS | GRADE");
+            bw.newLine();
+            bw.write("-------------------------------------");
             bw.newLine();
 
             String line;
             boolean isHeader = true;
 
             while ((line = br2.readLine()) != null) {
-
-                // Skip header
                 if (isHeader) {
                     isHeader = false;
                     continue;
                 }
 
-                // TAB separated values
                 String[] data = line.split("\\t");
-
-                // Safety check
-                if (data.length < 3) {
-                    continue;
-                }
+                if (data.length < 3) continue;
 
                 String id = data[0].trim();
                 String marks = data[1].trim();
                 String grade = data[2].trim();
 
-                // Merge if ID exists
                 if (studentDetails.containsKey(id)) {
-                    bw.write(id + "," + studentDetails.get(id) + "," + marks + "," + grade);
+                    String[] details = studentDetails.get(id).split(",");
+                    bw.write(id + " | " + details[0] + " | " + details[1]
+                            + " | " + marks + " | " + grade);
                     bw.newLine();
                 }
             }
 
-            System.out.println("CSV files merged successfully!");
+            // ===== Console Report =====
+            System.out.println("====================================");
+            System.out.println(" CSV MERGE REPORT ");
+            System.out.println("====================================");
+            System.out.println("Input File 1 : students1.csv");
+            System.out.println("Input File 2 : students2.csv");
+            System.out.println("Output File  : " + outputFile);
+            System.out.println("Status       : SUCCESS");
+            System.out.println("====================================");
 
         } catch (IOException | NullPointerException e) {
             e.printStackTrace();
