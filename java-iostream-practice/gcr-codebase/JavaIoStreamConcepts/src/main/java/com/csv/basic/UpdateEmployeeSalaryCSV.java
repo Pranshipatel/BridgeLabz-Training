@@ -1,66 +1,71 @@
 package com.csv.basic;
 
-import java.io.BufferedReader; // For reading CSV file
-import java.io.BufferedWriter; // For writing CSV file
-import java.io.InputStreamReader; // Converts byte stream to char stream
-import java.io.FileWriter; // Writes characters to file
-import java.io.File; // Represents file path
-import java.io.IOException; // Handles IO exceptions
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.FileWriter;
+import java.io.File;
+import java.io.IOException;
 
 public class UpdateEmployeeSalaryCSV {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		String outputDir = "output"; // Output folder
-		String outputFile = outputDir + "/updated_employees.csv";
+        String outputDir = "output";
+        String outputFile = outputDir + "/updated_employees.csv";
 
-		// Create output directory if not exists
-		File dir = new File(outputDir);
-		if (!dir.exists()) {
-			dir.mkdir();
-		}
+        File dir = new File(outputDir);
+        if (!dir.exists()) {
+            dir.mkdir();
+        }
 
-		try (BufferedReader br = new BufferedReader(new InputStreamReader(
-				// Load CSV file from resources folder
-				UpdateEmployeeSalaryCSV.class.getClassLoader().getResourceAsStream("docs/csv/employees.csv")));
-				BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile))) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(
+                UpdateEmployeeSalaryCSV.class.getClassLoader()
+                        .getResourceAsStream("docs/csv/employees.csv")));
+             BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile))) {
 
-			String line;
-			boolean isHeader = true; // Flag to handle header row
+            String line;
+            boolean isHeader = true;
+            int updatedCount = 0;
 
-			// Read CSV file line by line
-			while ((line = br.readLine()) != null) {
+            // Write new header format
+            bw.write("ID,Name,Department,UpdatedSalary");
+            bw.newLine();
 
-				// Write header row directly
-				if (isHeader) {
-					bw.write(line);
-					bw.newLine();
-					isHeader = false;
-					continue;
-				}
+            while ((line = br.readLine()) != null) {
 
-				// Split CSV row into columns
-				String[] data = line.split(",");
+                if (isHeader) {
+                    isHeader = false;
+                    continue; // skip old header
+                }
 
-				String department = data[2]; // Department column
-				double salary = Double.parseDouble(data[3]); // Salary column
+                String[] data = line.split(",");
 
-				// Increase salary by 10% if department is IT
-				if (department.equalsIgnoreCase("IT")) {
-					salary = salary + (salary * 0.10);
-				}
+                String department = data[2];
+                double salary = Double.parseDouble(data[3]);
 
-				// Write updated row to new CSV file
-				bw.write(data[0] + "," + data[1] + "," + department + "," + (int) salary);
-				bw.newLine();
-			}
+                if (department.equalsIgnoreCase("IT")) {
+                    salary = salary + (salary * 0.10);
+                    updatedCount++;
+                }
 
-			// Confirmation message
-			System.out.println("CSV file updated successfully!");
+                bw.write(data[0] + "," + data[1] + "," + department + "," + (int) salary);
+                bw.newLine();
+            }
 
-		} catch (IOException e) {
-			// Handle file read/write exceptions
-			e.printStackTrace();
-		}
-	}
+            // ===== Console Report =====
+            System.out.println("========================================");
+            System.out.println(" EMPLOYEE SALARY UPDATE REPORT ");
+            System.out.println("========================================");
+            System.out.println("Source File  : employees.csv");
+            System.out.println("Output File  : " + outputFile);
+            System.out.println("Rule Applied : +10% salary for IT department");
+            System.out.println("Employees Updated : " + updatedCount);
+            System.out.println("Status       : SUCCESS");
+            System.out.println("========================================");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
