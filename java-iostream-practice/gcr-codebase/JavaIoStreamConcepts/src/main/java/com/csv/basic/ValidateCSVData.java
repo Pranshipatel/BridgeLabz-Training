@@ -7,10 +7,7 @@ import java.util.regex.Pattern;
 
 public class ValidateCSVData {
 
-    // Regex for valid email
     private static final String EMAIL_REGEX = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
-
-    // Regex for exactly 10-digit phone number
     private static final String PHONE_REGEX = "\\d{10}";
 
     public static void main(String[] args) {
@@ -27,9 +24,12 @@ public class ValidateCSVData {
             boolean isHeader = true;
             int rowNumber = 1;
 
+            System.out.println("========================================");
+            System.out.println(" CSV DATA VALIDATION REPORT ");
+            System.out.println("========================================");
+
             while ((line = br.readLine()) != null) {
 
-                // Skip header
                 if (isHeader) {
                     isHeader = false;
                     continue;
@@ -37,13 +37,13 @@ public class ValidateCSVData {
 
                 rowNumber++;
 
-                // TAB-separated CSV
                 String[] data = line.split("\\t");
 
-                // Safety check
                 if (data.length < 4) {
-                    System.out.println("Malformed Row at " + rowNumber + " → " + line);
-                    System.out.println("----------------------------------");
+                    System.out.println("Row Number : " + rowNumber);
+                    System.out.println("Status     : MALFORMED");
+                    System.out.println("Raw Data   : " + line);
+                    System.out.println("----------------------------------------");
                     continue;
                 }
 
@@ -52,19 +52,24 @@ public class ValidateCSVData {
 
                 boolean isValid = true;
 
+                StringBuilder errorMsg = new StringBuilder();
+
                 if (!emailPattern.matcher(email).matches()) {
-                    System.out.println("Invalid Email at row " + rowNumber + " → " + email);
+                    errorMsg.append(" - Invalid Email       : ").append(email).append("\n");
                     isValid = false;
                 }
 
                 if (!phonePattern.matcher(phone).matches()) {
-                    System.out.println("Invalid Phone Number at row " + rowNumber + " → " + phone);
+                    errorMsg.append(" - Invalid Phone       : ").append(phone).append("\n");
                     isValid = false;
                 }
 
                 if (!isValid) {
-                    System.out.println("Invalid Row Data: " + line);
-                    System.out.println("----------------------------------");
+                    System.out.println("Row Number : " + rowNumber);
+                    System.out.println("Status     : INVALID");
+                    System.out.print("Errors     :\n" + errorMsg);
+                    System.out.println("Raw Data   : " + line);
+                    System.out.println("----------------------------------------");
                 }
             }
 
