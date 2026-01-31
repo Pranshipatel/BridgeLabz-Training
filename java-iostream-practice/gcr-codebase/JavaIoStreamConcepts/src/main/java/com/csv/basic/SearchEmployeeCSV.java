@@ -1,62 +1,62 @@
 package com.csv.basic;
 
-import java.io.BufferedReader; // For reading CSV file
-import java.io.InputStreamReader; // Converts byte stream to character stream
-import java.io.IOException; // Handles IO exceptions
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 
 public class SearchEmployeeCSV {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		String searchName = "Neha"; // Employee name to search
+        String searchName = "Neha";
 
-		try (BufferedReader br = new BufferedReader(new InputStreamReader(
-				// Load CSV file from resources folder
-				SearchEmployeeCSV.class.getClassLoader().getResourceAsStream("docs/csv/employees.csv")))) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(
+                SearchEmployeeCSV.class.getClassLoader()
+                        .getResourceAsStream("docs/csv/employees.csv")))) {
 
-			String line;
-			boolean isHeader = true; // Flag to skip header row
-			boolean found = false; // Flag to check if employee is found
+            String line;
+            boolean isHeader = true;
+            boolean found = false;
 
-			// Read CSV file line by line
-			while ((line = br.readLine()) != null) {
+            String name = null, department = null, salary = null;
 
-				// Skip header row
-				if (isHeader) {
-					isHeader = false;
-					continue;
-				}
+            while ((line = br.readLine()) != null) {
 
-				// Split line into columns
-				String[] data = line.split(",");
+                if (isHeader) {
+                    isHeader = false;
+                    continue;
+                }
 
-				String name = data[1]; // Employee Name
+                String[] data = line.split(",");
 
-				// Check if employee name matches (case-insensitive)
-				if (name.equalsIgnoreCase(searchName)) {
+                if (data[1].equalsIgnoreCase(searchName)) {
+                    name = data[1];
+                    department = data[2];
+                    salary = data[3];
+                    found = true;
+                    break;
+                }
+            }
 
-					String department = data[2]; // Employee Department
-					String salary = data[3]; // Employee Salary
+            // ===== OUTPUT REPORT =====
+            System.out.println("====================================");
+            System.out.println(" EMPLOYEE SEARCH RESULT ");
+            System.out.println("====================================");
 
-					// Print employee details
-					System.out.println("Employee Found!");
-					System.out.println("Name       : " + name);
-					System.out.println("Department : " + department);
-					System.out.println("Salary     : " + salary);
+            if (found) {
+                System.out.println("Status     : FOUND");
+                System.out.println("Name       : " + name);
+                System.out.println("Department : " + department);
+                System.out.println("Salary     : " + salary);
+            } else {
+                System.out.println("Status     : NOT FOUND");
+                System.out.println("Search Key : " + searchName);
+            }
 
-					found = true;
-					break; // Stop searching once found
-				}
-			}
+            System.out.println("====================================");
 
-			// If employee not found
-			if (!found) {
-				System.out.println("Employee with name '" + searchName + "' not found.");
-			}
-
-		} catch (IOException e) {
-			// Handle file reading exceptions
-			e.printStackTrace();
-		}
-	}
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
