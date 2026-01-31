@@ -1,71 +1,76 @@
 package com.csv.basic;
 
-import java.io.BufferedReader; // Efficient reading of large files
-import java.io.FileReader; // Reads file from disk
-import java.io.IOException; // Handles IO exceptions
-import java.util.ArrayList; // Stores chunk of lines
-import java.util.List; // List interface
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ReadLargeCSV {
 
-	private static final int CHUNK_SIZE = 100; // Number of lines per batch
+    private static final int CHUNK_SIZE = 100;
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		String filePath = "data/large_employees.csv"; // Large CSV file path
-		int totalRecords = 0; // Total processed records
+        String filePath = "data/large_employees.csv";
+        int totalRecords = 0;
+        int batchNumber = 0;
 
-		try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+        System.out.println("========================================");
+        System.out.println(" LARGE CSV PROCESSING REPORT ");
+        System.out.println("========================================");
+        System.out.println("File       : " + filePath);
+        System.out.println("Batch Size : " + CHUNK_SIZE);
+        System.out.println("----------------------------------------");
 
-			String line;
-			boolean isHeader = true; // Flag to skip header
-			List<String> batch = new ArrayList<>(CHUNK_SIZE);
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
 
-			// Read file line by line (streaming)
-			while ((line = br.readLine()) != null) {
+            String line;
+            boolean isHeader = true;
+            List<String> batch = new ArrayList<>(CHUNK_SIZE);
 
-				// Skip header row
-				if (isHeader) {
-					isHeader = false;
-					continue;
-				}
+            while ((line = br.readLine()) != null) {
 
-				batch.add(line); // Add line to current batch
+                if (isHeader) {
+                    isHeader = false;
+                    continue;
+                }
 
-				// Process when batch size reaches 100
-				if (batch.size() == CHUNK_SIZE) {
+                batch.add(line);
 
-					processBatch(batch); // Process 100 lines
-					totalRecords += batch.size(); // Update record count
-					batch.clear(); // Clear batch to free memory
+                if (batch.size() == CHUNK_SIZE) {
 
-					// Display progress
-					System.out.println("Processed records so far: " + totalRecords);
-				}
-			}
+                    batchNumber++;
+                    processBatch(batch);
+                    totalRecords += batch.size();
 
-			// Process remaining lines (if less than chunk size)
-			if (!batch.isEmpty()) {
-				processBatch(batch);
-				totalRecords += batch.size();
-			}
+                    System.out.println("Processed Batch   : " + batchNumber);
+                    System.out.println("Records Processed : " + totalRecords);
+                    System.out.println("----------------------------------------");
 
-			// Final count
-			System.out.println("Total records processed: " + totalRecords);
+                    batch.clear();
+                }
+            }
 
-		} catch (IOException e) {
-			// Handle file read exceptions
-			e.printStackTrace();
-		}
-	}
+            if (!batch.isEmpty()) {
+                batchNumber++;
+                processBatch(batch);
+                totalRecords += batch.size();
+            }
 
-	// Method to process a chunk of lines
-	private static void processBatch(List<String> batch) {
+            System.out.println("FINAL SUMMARY");
+            System.out.println("----------------------------------------");
+            System.out.println("Total Records     : " + totalRecords);
+            System.out.println("========================================");
 
-		// Simulate processing (e.g., parsing, validation, DB insert)
-		for (String record : batch) {
-			// Example: do nothing or light processing
-			// System.out.println(record);
-		}
-	}
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void processBatch(List<String> batch) {
+        for (String record : batch) {
+            // processing logic
+        }
+    }
 }
