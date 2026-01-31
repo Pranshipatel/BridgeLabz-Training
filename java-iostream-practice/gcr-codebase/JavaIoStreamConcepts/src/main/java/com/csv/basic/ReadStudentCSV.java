@@ -1,49 +1,47 @@
 package com.csv.basic;
 
-import java.io.BufferedReader; // For reading text from input stream
-import java.io.InputStreamReader; // Converts byte stream to character stream
-import java.io.IOException; // Handles input-output exceptions
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 
 public class ReadStudentCSV {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		// Try-with-resources to automatically close BufferedReader
-		try (BufferedReader br = new BufferedReader(new InputStreamReader(
-				// Load CSV file from src/main/resources folder
-				ReadStudentCSV.class.getClassLoader().getResourceAsStream("docs/csv/students.csv")))) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(
+                ReadStudentCSV.class.getClassLoader()
+                        .getResourceAsStream("docs/csv/students.csv")))) {
 
-			String line; // Stores each line read from CSV
-			boolean isHeader = true; // Flag to skip header row
+            String line;
+            boolean isHeader = true;
 
-			// Read CSV file line by line
-			while ((line = br.readLine()) != null) {
+            // Print table header once
+            System.out.println("STUDENT DETAILS");
+            System.out.println("========================================");
+            System.out.printf("%-6s %-15s %-6s %-6s%n", "ID", "NAME", "AGE", "MARKS");
+            System.out.println("----------------------------------------");
 
-				// Skip the first line (header)
-				if (isHeader) {
-					isHeader = false;
-					continue;
-				}
+            while ((line = br.readLine()) != null) {
 
-				// Split line into columns using comma
-				String[] data = line.split(",");
+                if (isHeader) {
+                    isHeader = false;
+                    continue;
+                }
 
-				String id = data[0]; // Student ID
-				String name = data[1]; // Student Name
-				String age = data[2]; // Student Age
-				String marks = data[3]; // Student Marks
+                String[] data = line.split(",");
 
-				// Print student details in structured format
-				System.out.println("Student ID   : " + id);
-				System.out.println("Name         : " + name);
-				System.out.println("Age          : " + age);
-				System.out.println("Marks        : " + marks);
-				System.out.println("----------------------------");
-			}
+                String id = data[0];
+                String name = data[1];
+                String age = data[2];
+                String marks = data[3];
 
-		} catch (IOException e) {
-			// Print exception details if file read fails
-			e.printStackTrace();
-		}
-	}
+                // Print student data in aligned format
+                System.out.printf("%-6s %-15s %-6s %-6s%n",
+                        id, name, age, marks);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
