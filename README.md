@@ -896,3 +896,28 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 👉 [Day 37 - Streams API in Java](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java8-programmming-practice/java8-programming-practice/gcr-codebase/Java8ProgrammingConcepts/src/com/streamapi)
 
 ---
+
+### 📅 Day 38 – Collectors in Java 8
+**(Date: 30-Jan-2026)**
+
+### 📝 Topics Covered
+
+- **Purpose of Collectors**  
+  Collectors in Java 8 are utility methods used with `Stream.collect()` to transform, aggregate, and summarize data efficiently.
+
+- **Data Transformation & Aggregation**  
+  They convert streams into collections or values using methods like `toList()`, `toSet()`, `toMap()`, and `joining()`.
+
+- **Grouping & Partitioning Data**  
+  `groupingBy()` classifies elements into groups, while `partitioningBy()` splits data into two categories based on a predicate.
+
+- **Statistical Operations**  
+  Collectors such as `summarizingInt()` provide statistics like count, sum, min, max, and average in a single operation.
+
+- **Clean & Readable Stream Pipelines**  
+  Collectors offer ready-made reductions that make stream-based code concise, readable, and maintainable.
+
+🔗 **Code:**  
+👉 [Day 38 - Collectors in Java 8](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java8-programmming-practice/java8-programming-practice/gcr-codebase/Java8ProgrammingConcepts/src/com/collectors)
+
+---
