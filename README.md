@@ -852,6 +852,28 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 - Compared **imperative vs functional programming** styles using real examples.
 
 🔗 **Code:**  
-👉 [Day 37 - Java 8 Features & Lambda Expressions](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java8-programmming-practice/java8-programming-practice/gcr-codebase/Java8ProgrammingConcepts/src/com/lambda)
+👉 [Day 35 - Java 8 Features & Lambda Expressions](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java8-programmming-practice/java8-programming-practice/gcr-codebase/Java8ProgrammingConcepts/src/com/lambda)
+
+---
+## 📅 Day 36 – Functional Interfaces in Java  
+**(Date: 28-Jan-2026)**
+
+### 📝 Topics Covered
+
+- Understood the concept of **Functional Interfaces** and their role in enabling lambda expressions.
+- Learned the purpose of the `@FunctionalInterface` annotation and its compile-time safety benefits.
+- Explored **built-in functional interfaces** from `java.util.function`:
+  - `Predicate<T>` for boolean conditions
+  - `Function<T, R>` for data transformation
+  - `Consumer<T>` for performing actions
+  - `Supplier<T>` for providing values
+- Implemented **custom functional interfaces** for domain-specific operations.
+- Practiced **lambda expressions vs anonymous classes** and identified when to use each.
+- Learned **functional interface composition** using `andThen()`, `compose()`, `and()`, `or()`, and `negate()`.
+- Used **method references** as a clean alternative to lambda expressions.
+- Combined functional interfaces with **Streams API** for real-world data processing.
+
+🔗 **Code:**  
+👉 [Day 35 - Functional Interfaces](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java8-programmming-practice/java8-programming-practice/gcr-codebase/Java8ProgrammingConcepts/src/com/functioninterface)
 
 ---
