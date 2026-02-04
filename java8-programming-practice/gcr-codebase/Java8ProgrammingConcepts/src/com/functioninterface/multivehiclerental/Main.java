@@ -2,6 +2,7 @@ package com.functioninterface.multivehiclerental;
 
 public class Main {
 	public static void main(String[] args) {
+		    // Car
 		    Rent carRent = () -> System.out.println("Car rented");
 		    ReturnVehicle  carReturn = () -> System.out.println("Car returned");
 
