@@ -1,0 +1,35 @@
+CREATE DATABASE crud;
+Use crud;
+
+-- Creating the table
+Create Table operations(
+   EmployeeId INT PRIMARY KEY,
+   EmployeeName VARCHAR(50),
+   Department VARCHAR(100),
+   Salary INT
+);
+
+-- Adding the details to table
+INSERT INTO operations(EmployeeId, EmployeeName, Department, Salary)
+VALUES (1, "Pranshi Patel", "IT", 500000),
+	   (2, 'Rahul Sharma', 'HR', 420000),
+	   (3, 'Anita Verma', 'Finance', 600000),
+       (4, 'Amit Singh', 'IT', 550000),
+       (5, 'Neha Gupta', 'Marketing', 480000),
+       (6, 'Karan Mehta', 'Operations', 530000);
+       
+-- Viewing the table
+SELECT * FROM operations;
+
+-- Update Employee Table
+UPDATE operations
+SET Salary = 1000000
+WHERE EmployeeId = 5;
+
+-- Delete from table
+DELETE FROM operations WHERE EmployeeId = 5;
+
+-- Search from table
+SELECT EmployeeName
+FROM operations
+WHERE EmployeeName = "Amit singh";
