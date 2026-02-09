@@ -968,7 +968,7 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
   Covered **Strategy**, **Observer**, and **Command** patterns to handle communication, algorithms, and event-driven behavior efficiently.
 
 🔗 **Code:**
-👉 [Day 40 – Design Principles & Design Patterns in Java]()
+👉 [Day 40 – Design Principles & Design Patterns in Java](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-design-pattern-practice/java-design-pattern-practice/gcr-codebase/JavaDesignPatternConcept/src/com/designpattern/smartlibrarymanagement)
 
 ---
 
@@ -989,7 +989,7 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 
 
 🔗 **Code:**  
-👉 [Day 41 – Multithreading & Concurrency in Java]()
+👉 [Day 41 – Multithreading & Concurrency in Java](https://github.com/Pranshipatel/BridgeLabz-Training/tree/java-design-pattern-practice/java-design-pattern-practice/gcr-codebase/JavaDesignPatternConcept/src/com/multithreading)
 
 ---
 
