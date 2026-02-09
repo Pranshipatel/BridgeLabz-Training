@@ -20,7 +20,7 @@ class Book {
 		return title;
 	}
 
-	// Static inner Builder class
+
 	public static class BookBuilder {
 
 		private String title;

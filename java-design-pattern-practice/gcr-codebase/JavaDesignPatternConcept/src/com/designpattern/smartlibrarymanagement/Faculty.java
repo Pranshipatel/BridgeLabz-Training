@@ -3,7 +3,7 @@ package com.designpattern.smartlibrarymanagement;
 //Faculty user implementation
 class Faculty implements User {
 
-	private String name; // Faculty name
+	private String name; 
 	private ReservationStrategy strategy = new ExtendedDaysReservation(); // Strategy
 
 	public Faculty(String name) {

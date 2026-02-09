@@ -8,7 +8,7 @@ public class LibraryApp {
 		// Get singleton catalog instance
 		LibraryCatalog catalog = LibraryCatalog.getInstance();
 
-		// Create users using Factory
+	
 		User student = UserFactory.createUser("student", "Alice");
 		User faculty = UserFactory.createUser("faculty", "Dr. Bob");
 

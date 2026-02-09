@@ -3,7 +3,7 @@ package com.designpattern.smartlibrarymanagement;
 //Librarian user implementation
 class Librarian implements User {
 
-	private String name; // Librarian name
+	private String name; 
 
 	public Librarian(String name) {
 		this.name = name;

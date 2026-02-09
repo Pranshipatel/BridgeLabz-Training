@@ -15,7 +15,7 @@ class LibraryCatalog {
 	// Stores subscribed users
 	private List<Observer> observers = new ArrayList<>();
 
-	// Private constructor to prevent object creation
+	
 	private LibraryCatalog() {
 	}
 

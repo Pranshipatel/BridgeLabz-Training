@@ -1,6 +1,6 @@
 package com.designpattern.smartlibrarymanagement;
 
-//Strategy interface for reservation behavior
+
 interface ReservationStrategy {
 	void reserve(String user, String book);
 }

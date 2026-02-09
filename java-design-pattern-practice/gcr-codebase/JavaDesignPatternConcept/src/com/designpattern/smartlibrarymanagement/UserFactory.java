@@ -4,7 +4,7 @@ package com.designpattern.smartlibrarymanagement;
 class UserFactory {
 
 	public static User createUser(String type, String name) {
-		switch (type.toLowerCase()) { // Decide object type at runtime
+		switch (type.toLowerCase()) { 
 		case "student":
 			return new Student(name);
 		case "faculty":

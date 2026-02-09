@@ -3,10 +3,10 @@ package com.designpattern.smartlibrarymanagement;
 //Singleton Logger class
 class Logger {
 
-	private static Logger instance; // Single instance
+	private static Logger instance; 
 
 	private Logger() {
-	} // Private constructor
+	} 
 
 	public static synchronized Logger getInstance() {
 		if (instance == null) {
